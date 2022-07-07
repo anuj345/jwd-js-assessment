@@ -91,7 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
   }
 
-  /****** 5. Add a countdown timer ******/
+  /******  5. Add a countdown timer - when the time is up, end the quiz, display the score and highlight the correct answers ******/
   let timerInterval;
   const timerCountdown = () => {
     let min = 0;
