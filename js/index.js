@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
       o: ['Sydney', 'Canberra', 'Melbourne', 'Perth'],
       a: 1,
     },
-      /****** 3) Add 2 more questions to the app (each question must have 4 options). ******/
+      // 3) Add 2 more questions to the app (each question must have 4 options). //
     {
       q: "How do we access object keys that have numbers, spaces or special characters in them?",
       o: ["With a comma (,)", "With a dot (.)", "With a bracket ([])", "With a quote('')"],
@@ -91,7 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
   }
 
-  /******  5. Add a countdown timer - when the time is up, end the quiz, display the score and highlight the correct answers ******/
+  //  5. Add a countdown timer - when the time is up, end the quiz, display the score and highlight the correct answers //
   let timerInterval;
   const timerCountdown = () => {
     let min = 0;
@@ -149,7 +149,7 @@ window.addEventListener('DOMContentLoaded', () => {
   };
 
   
-  /****** 1) Calculate the score as the total of the number of correct answers ******/
+  // 1) Calculate the score as the total of the number of correct answers //
   const displayScore = () => {
     let totalScore = document.querySelector("#score");
     totalScore.innerHTML = `<h2 class="text-dark mt-2 mb-5">Your total score is (correct answer/total questions): <span class="text-primary">${score}/${quizArray.length}</span></h2>`
@@ -157,7 +157,7 @@ window.addEventListener('DOMContentLoaded', () => {
   };
   
 
-  /****** 2) Add an Event listener for the submit button, which will display the score and highlight the correct answers when the button is clicked. ******/
+  // 2) Add an Event listener for the submit button, which will display the score and highlight the correct answers when the button is clicked. //
   const submitBtn = document.querySelector("#btnSubmit")
   submitBtn.addEventListener("click", () => {
     calculateScore();
@@ -169,7 +169,7 @@ window.addEventListener('DOMContentLoaded', () => {
     clearInterval(timerInterval);
   })
 
-  /******  4) Reload the page when the reset button is clicked ******/
+  // 4) Reload the page when the reset button is clicked //
   const resetBtn = document.querySelector("#btnReset")
   resetBtn.addEventListener("click", () => {
     location.reload();
